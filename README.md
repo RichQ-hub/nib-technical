@@ -3,12 +3,45 @@
 ## Contents
 
 - [Project Setup](#project-setup)
-  - [Method 1: Docker (Recommended)](#method-1-docker-recommended)
-  - [Method 2: Traditional Method](#method-2-traditional-method)
+  - [Method 1: Traditional Method](#method-1-traditional-method)
+  - [Method 2: Docker](#method-2-docker)
 
 ## Project Setup
 
-### Method 1: Docker (Recommended)
+### Method 1: Traditional Method
+
+#### Prerequisites
+
+As per the Nextjs docs, make sure your system meets the following requirements:
+
+- [Node.js 18.18](https://nodejs.org/en) or later.
+- macOS, Windows (including WSL), or Linux.
+- `yarn` package manager installed.
+
+#### Step 1: Clone the project
+
+```bash
+git clone https://github.com/RichQ-hub/nib-technical.git
+# or
+git clone git@github.com:RichQ-hub/nib-technical.git
+```
+
+#### Step 2: Install frontend dependencies
+
+```bash
+cd nib-technical/frontend
+yarn install --frozen-lockfile
+```
+
+#### Step 3: Run the development server (while in the frontend directory)
+
+```bash
+yarn dev
+```
+
+The frontend server will be running on `http://localhost:3000`.
+
+### Method 2: Docker
 
 #### Step 1: Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
@@ -95,36 +128,3 @@ Again, the frontend server will be running on `http://localhost:3333`.
 
 When you want to stop the server, and subsequently all the docker containers, simply press
 `Ctrl+C` in the terminal.
-
-### Method 2: Traditional Method
-
-#### Prerequisites
-
-As per the Nextjs docs, make sure your system meets the following requirements:
-
-- [Node.js 18.18](https://nodejs.org/en) or later.
-- macOS, Windows (including WSL), or Linux.
-- `yarn` package manager installed.
-
-#### Step 1: Clone the project
-
-```bash
-git clone https://github.com/RichQ-hub/nib-technical.git
-# or
-git clone git@github.com:RichQ-hub/nib-technical.git
-```
-
-#### Step 2: Install frontend dependencies
-
-```bash
-cd nib-technical/frontend
-yarn install --frozen-lockfile
-```
-
-#### Step 3: Run the development server (while in the frontend directory)
-
-```bash
-yarn dev
-```
-
-The frontend server will be running on `http://localhost:3000`.
