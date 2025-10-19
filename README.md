@@ -16,9 +16,9 @@
 #### Step 2: Clone the project
 
 ```bash
-git clone https://github.com/RichQ-hub/interex.git
+git clone https://github.com/RichQ-hub/nib-technical.git
 # or
-git clone git@github.com:RichQ-hub/interex.git
+git clone git@github.com:RichQ-hub/nib-technical.git
 ```
 
 #### Step 3: Run the server with the `startup.sh` script
@@ -83,9 +83,9 @@ As per the Nextjs docs, make sure your system meets the following requirements:
 #### Step 1: Clone the project
 
 ```bash
-git clone https://github.com/RichQ-hub/interex.git
+git clone https://github.com/RichQ-hub/nib-technical.git
 # or
-git clone git@github.com:RichQ-hub/interex.git
+git clone git@github.com:RichQ-hub/nib-technical.git
 ```
 
 #### Step 2: Run the development server
