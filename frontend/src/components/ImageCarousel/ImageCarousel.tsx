@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { use, useState } from 'react';
+import CarouselBtn from './CarouselBtn';
 
 const ImageCarousel = ({
   dogImageUrls,
@@ -14,34 +15,31 @@ const ImageCarousel = ({
   return (
     <div className='max-w-[600px] mx-auto'>
       {/* Image Figure */}
-      <figure className='h-[400px]'>
+      <figure className='relative mb-8 h-[400px] bg-cyan-900 border-[1px] border-cyan-50'>
         <Image
-          className='w-full h-full object-fill'
+          className='object-contain'
           src={dogImageHrefs[currImgIdx]}
           alt={dogImageHrefs[currImgIdx]}
-          height={400}
-          width={600}
+          fill
         />
       </figure>
 
       {/* Scroll Button Group */}
       <div className='flex justify-between items-center'>
-        <button
-          type='button'
-          onClick={() => setCurrImgIdx(currImgIdx === 0 ? dogImageHrefs.length - 1 : currImgIdx - 1)}
+        <CarouselBtn
+          handleClick={() => setCurrImgIdx(currImgIdx === 0 ? dogImageHrefs.length - 1 : currImgIdx - 1)}
         >
           Previous
-        </button>
+        </CarouselBtn>
 
         {/* Page Number */}
-        <p>{currImgIdx + 1}/{dogImageHrefs.length}</p>
+        <p className='font-semibold'>{currImgIdx + 1}/{dogImageHrefs.length}</p>
 
-        <button
-          type='button'
-          onClick={() => setCurrImgIdx((currImgIdx + 1) % dogImageHrefs.length)}
+        <CarouselBtn
+          handleClick={() => setCurrImgIdx((currImgIdx + 1) % dogImageHrefs.length)}
         >
           Next
-        </button>
+        </CarouselBtn>
       </div>
     </div>
   )
