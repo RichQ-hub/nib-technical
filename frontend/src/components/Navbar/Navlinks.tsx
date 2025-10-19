@@ -8,8 +8,8 @@ const NAV_LINKS = [
     href: '/',
   },
   {
-    name: 'CATS',
-    href: '/cats',
+    name: 'DOGS',
+    href: '/dogs',
   },
 ]
 
