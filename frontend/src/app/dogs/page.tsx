@@ -1,6 +1,6 @@
 import ImageCarousel from "@/components/ImageCarousel";
 import LoadingSpinner from "@/components/LoadingSpinner";
-import { saira } from "@/fronts";
+import { saira } from "@/fonts";
 import { getDogImgs } from "@/services/api";
 import { Suspense } from "react";
 

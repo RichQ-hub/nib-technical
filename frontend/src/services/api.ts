@@ -1,4 +1,6 @@
-const parseJSON = async (url: string, options: any) => {
+import { RequestInit } from "next/dist/server/web/spec-extension/request";
+
+const parseJSON = async (url: string, options: RequestInit) => {
   const response = await fetch(url, { ...options, cache: 'no-store' });
   const data = await response.json();
 
@@ -11,7 +13,7 @@ const parseJSON = async (url: string, options: any) => {
 }
 
 export const getDogImgs = async () => {
-  const options = {
+  const options: RequestInit = {
     method: 'GET',
     headers: {
       'Content-type': 'application/json',
