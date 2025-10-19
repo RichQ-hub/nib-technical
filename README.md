@@ -94,3 +94,4 @@ git clone git@github.com:RichQ-hub/nib-technical.git
 cd frontend
 yarn dev
 ```
+The frontend server will be running on `http://localhost:3000`.
