@@ -31,6 +31,8 @@ cd nib-technical
 
 #### Step 3: Run the server with the `startup.sh` script
 
+The `startup.sh` script will handle building and tearing down the docker containers.
+
 **On Linux (Tested on WSL Ubuntu):**
 
 ```bash
@@ -73,7 +75,23 @@ frontend-1  |  ✓ Starting...
 frontend-1  |  ✓ Ready in 248ms
 ```
 
-#### Step 4: Stopping the server
+#### Step 4: (Optional) Alternative startup
+
+If running `startup.sh` refuses to work, simply run:
+
+```bash
+docker compose up
+```
+
+Once you're done with the application, press `Ctrl+C` in the terminal and then run:
+
+```bash
+docker compose down
+```
+
+Again, the frontend server will be running on `http://localhost:3333`.
+
+#### Step 5: Stopping the server
 
 When you want to stop the server, and subsequently all the docker containers, simply press
 `Ctrl+C` in the terminal.
