@@ -2,7 +2,9 @@
 
 ## Contents
 
-
+- [Project Setup](#project-setup)
+  - [Method 1: Docker (Recommended)](#method-1-docker-recommended)
+  - [Method 2: Traditional Method](#method-2-traditional-method)
 
 ## Project Setup
 
@@ -19,6 +21,12 @@
 git clone https://github.com/RichQ-hub/nib-technical.git
 # or
 git clone git@github.com:RichQ-hub/nib-technical.git
+```
+
+Then switch to the root project folder.
+
+```bash
+cd nib-technical
 ```
 
 #### Step 3: Run the server with the `startup.sh` script
@@ -88,10 +96,17 @@ git clone https://github.com/RichQ-hub/nib-technical.git
 git clone git@github.com:RichQ-hub/nib-technical.git
 ```
 
-#### Step 2: Run the development server
+#### Step 2: Install frontend dependencies
 
 ```bash
-cd frontend
+cd nib-technical/frontend
+yarn install --frozen-lockfile
+```
+
+#### Step 3: Run the development server (while in the frontend directory)
+
+```bash
 yarn dev
 ```
+
 The frontend server will be running on `http://localhost:3000`.
