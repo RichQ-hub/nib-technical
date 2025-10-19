@@ -1,4 +1,5 @@
 import ImageCarousel from "@/components/ImageCarousel";
+import LoadingSpinner from "@/components/LoadingSpinner";
 import { saira } from "@/fronts";
 import { getDogImgs } from "@/services/api";
 import { Suspense } from "react";
@@ -10,9 +11,11 @@ export default function DogsPage() {
     <main>
       <h1 className={`${saira.className} font-extrabold text-6xl mb-8 text-center`}>Dog Carousel</h1>
       
-      <Suspense fallback={<p>Loading Dog Images...</p>}>
-        <ImageCarousel dogImageUrls={dogImageUrls} />
-      </Suspense>
+      <div className='max-w-[700px] min-w-[400px] mx-auto'>
+        <Suspense fallback={<LoadingSpinner />}>
+          <ImageCarousel dogImageUrls={dogImageUrls} />
+        </Suspense>
+      </div>
     </main>
   );
 }

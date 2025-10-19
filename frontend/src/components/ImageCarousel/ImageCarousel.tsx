@@ -13,9 +13,9 @@ const ImageCarousel = ({
   const [currImgIdx, setCurrImgIdx] = useState<number>(0);
 
   return (
-    <div className='max-w-[600px] mx-auto'>
+    <>
       {/* Image Figure */}
-      <figure className='relative mb-8 h-[400px] bg-cyan-900 border-[1px] border-cyan-50'>
+      <figure className='relative mb-8 h-[500px] bg-stone-950 border-[1px] border-cyan-50'>
         <Image
           className='object-contain'
           src={dogImageHrefs[currImgIdx]}
@@ -41,7 +41,7 @@ const ImageCarousel = ({
           Next
         </CarouselBtn>
       </div>
-    </div>
+    </>
   )
 }
 

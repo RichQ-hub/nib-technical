@@ -11,7 +11,7 @@ const CarouselBtn = ({
 }) => {
   return (
     <button
-      className='px-3 py-1 border-[1px] border-cyan-50 rounded-xs font-semibold cursor-pointer hover:border-cyan-500 hover:text-cyan-500'
+      className='px-3 py-1 border-[1px] border-cyan-50 rounded-xs font-semibold cursor-pointer hover:border-cyan-500 hover:text-cyan-500 active:scale-95'
       type='button'
       onClick={handleClick}
     >
