@@ -1,4 +1,4 @@
-import { Fira_Sans, Nova_Square, Saira_Semi_Condensed } from 'next/font/google';
+import { Fira_Sans, Saira_Semi_Condensed } from 'next/font/google';
  
 export const fira = Fira_Sans({
   weight: ['400', '500', '700'],

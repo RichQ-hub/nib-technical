@@ -1,4 +1,4 @@
-import { saira } from '@/fronts';
+import { saira } from '@/fonts';
 import Link from 'next/link';
 import React from 'react';
 
